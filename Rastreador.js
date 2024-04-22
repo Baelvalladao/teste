@@ -1,4 +1,5 @@
-exporte default class Rastreador {
+import Vertice from "./Vertice.js";
+export default class Rastreador {
     vertice = null;
     anterior = null;
     custo = null;
@@ -24,6 +25,6 @@ exporte default class Rastreador {
         console.log(saida+ "\n");
     }
         retornaCustoTotal(){
-            return this.custo + this.heuristica
+            return this.custo + this.heuristica;
         }
 }

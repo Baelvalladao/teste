@@ -36,7 +36,8 @@ export default class FilaAbertos{
 
     substituirRastreador(rastreadorAntigo, rastreadorNovo){
         let indiceAntigo = this.elementos.indexOf(rastreadorAntigo);
-        this.elementos[indiceAntigo] = rastreadorNovo
+        this.elementos[indiceAntigo] = rastreadorNovo;
+        
         this.ordenaFila();
     }
 }

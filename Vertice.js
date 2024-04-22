@@ -1,4 +1,5 @@
-import Aresta from "./Aresta"
+import Aresta from "./Aresta.js"
+
 
 export default class Vertice{
     valor = "";
@@ -18,7 +19,7 @@ export default class Vertice{
         let arestaEncontrada = null;
         this.adjacentes.forEach( aresta => {
             if(aresta.destino == vertice){
-                arestaEncontra = aresta;
+                arestaEncontrada = aresta;
             }
         });
         return arestaEncontrada;
